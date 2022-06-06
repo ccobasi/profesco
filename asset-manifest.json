@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/profesco/static/css/main.5b9c7a8f.css",
-    "main.js": "/profesco/static/js/main.565e2198.js",
-    "static/js/787.44f62399.chunk.js": "/profesco/static/js/787.44f62399.chunk.js",
-    "static/media/hero_img.png": "/profesco/static/media/hero_img.bb7fd200e46e820a899f.png",
-    "static/media/personal_tutor_img.png": "/profesco/static/media/personal_tutor_img.eab05a429495a0618261.png",
-    "static/media/testimonial1.png": "/profesco/static/media/testimonial1.016f8fa396a3ae0ba65c.png",
-    "static/media/all_access.png": "/profesco/static/media/all_access.cfd67240d53c3cfcf52e.png",
-    "static/media/learn_pace.png": "/profesco/static/media/learn_pace.f8af36550db53c5f6635.png",
-    "index.html": "/profesco/index.html",
-    "main.5b9c7a8f.css.map": "/profesco/static/css/main.5b9c7a8f.css.map",
-    "main.565e2198.js.map": "/profesco/static/js/main.565e2198.js.map",
-    "787.44f62399.chunk.js.map": "/profesco/static/js/787.44f62399.chunk.js.map"
+    "main.css": "/static/css/main.5b9c7a8f.css",
+    "main.js": "/static/js/main.85f9c425.js",
+    "static/js/787.44f62399.chunk.js": "/static/js/787.44f62399.chunk.js",
+    "static/media/hero_img.png": "/static/media/hero_img.bb7fd200e46e820a899f.png",
+    "static/media/personal_tutor_img.png": "/static/media/personal_tutor_img.eab05a429495a0618261.png",
+    "static/media/testimonial1.png": "/static/media/testimonial1.016f8fa396a3ae0ba65c.png",
+    "static/media/all_access.png": "/static/media/all_access.cfd67240d53c3cfcf52e.png",
+    "static/media/learn_pace.png": "/static/media/learn_pace.f8af36550db53c5f6635.png",
+    "index.html": "/index.html",
+    "main.5b9c7a8f.css.map": "/static/css/main.5b9c7a8f.css.map",
+    "main.85f9c425.js.map": "/static/js/main.85f9c425.js.map",
+    "787.44f62399.chunk.js.map": "/static/js/787.44f62399.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b9c7a8f.css",
-    "static/js/main.565e2198.js"
+    "static/js/main.85f9c425.js"
   ]
 }

@@ -5,7 +5,7 @@ import dots from '../components/img/Group19.png'
 import bell_fill from '../components/img/Bell_fill.png'
 
 
-const All_Access = () => {
+const AllAccess = () => {
     return (
         <div className="all-access">
 
@@ -41,4 +41,4 @@ const All_Access = () => {
     )
 }
 
-export default All_Access
+export default AllAccess

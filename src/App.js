@@ -1,11 +1,11 @@
 
 import './App.css';
-import All_Access from './components/All_Access';
+import AllAccess from './components/AllAccess';
 import Footer from './components/Footer';
 import Header from './components/Header'
 import Hero from './components/Hero';
 import LearnPace from './components/LearnPace';
-import Personal_Tutor from './components/PersonalTutor';
+import PersonalTutor from './components/PersonalTutor';
 import Rate from './components/Rate';
 import TakeClass from './components/TakeClasses';
 import Testimonials from './components/Testimonial';
@@ -18,8 +18,8 @@ function App() {
       <Header />
       <Hero />
       <Tutors />
-      <All_Access />
-      <Personal_Tutor />
+      <AllAccess />
+      <PersonalTutor />
       <LearnPace />
       <Rate />
       <Testimonials />

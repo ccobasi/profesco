@@ -4,7 +4,7 @@ import personal_tutor_img from '../components/img/personal_tutor_img.png'
 import dots from '../components/img/Group19.png'
 import bell_fill from '../components/img/Bell_fill.png'
 
-const Personal_Tutor = () => {
+const PersonalTutor = () => {
     return (
         <div className="personal_tutor">
             <div className="text">
@@ -34,4 +34,4 @@ const Personal_Tutor = () => {
     )
 }
 
-export default Personal_Tutor
+export default PersonalTutor

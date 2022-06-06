@@ -2,7 +2,7 @@
   "name": "profesco-fe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://professco.ng",
+  "homepage": "http://ccobasi.github.io/profesco",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",

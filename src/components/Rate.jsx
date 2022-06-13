@@ -6,21 +6,21 @@ const Rate = () => {
             <div className="rate">
                 <div >
                     <p className="numbers">1,000+</p>
-                    <p>Professionals</p>
+                    <p className="group">Professionals</p>
                 </div>
                 <div >
                     <p className="numbers">2,500+</p>
-                    <p>Students</p>
+                    <p className="group">Students</p>
                 </div>
                 <div >
                     <p className="numbers">3,000+</p>
-                    <p>
+                    <p className="group">
                     Total course views
                     </p>
                 </div>
                 <div >
                     <p className="numbers">50,000+</p>
-                    <p>Student community</p>
+                    <p className="group">Student community</p>
                 </div>
             </div>
         </>

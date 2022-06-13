@@ -17,7 +17,7 @@ const LearnPace = () => {
                 </div>
 
                 <span className="sub">
-                    CONVINIENT
+                    CONVENIENT
                 </span>
                 <h2 className="title">
                     Learn at your pace
@@ -32,8 +32,8 @@ const LearnPace = () => {
             </div>
 
             <img src={bg} alt="Profesco image" className="bg" />
-            <img src={learn_pace} alt="Profesco" className="all-access-img" />
-            <img src={dots} alt="profesco" className="dots" />
+            <img src={learn_pace} alt="Profesco" className="learn-img" />
+            <img src={dots} alt="profesco" className="pace-dots" />
         </div>
     )
 }

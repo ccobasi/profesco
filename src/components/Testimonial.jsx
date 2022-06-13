@@ -9,7 +9,7 @@ const Testimonials = () => {
             <div className="testimonials">
                 <div className="testimonial-left">
                 <div className="review">
-                    <h2>
+                    <h2 className="title">
                         Students Reviews <br />
                         are essential
                     </h2>

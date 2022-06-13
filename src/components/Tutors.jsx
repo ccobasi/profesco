@@ -7,9 +7,9 @@ const Tutors = () => {
     return (
         <div className="tutors">
             <div className="text">
-                <h2>Our tutors</h2>
+                <h2 className="our-h2">Our tutors</h2>
                 <div>
-                    <h2>
+                    <h2 className="text-h2">
                         100+ tutors around the country <br />
                         guiding you to the right path
                     </h2>

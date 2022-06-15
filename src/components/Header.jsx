@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../components/img/logo2.png'
 import menu from '../components/img/menu.png'
 
+
 const Header = () => {
+
     return (
         <div className="header">
             <img src={menu} alt="burger" className="menu" />
@@ -31,6 +33,8 @@ const Header = () => {
             <NavLink exact="true" activeclassname="active" className="btn get-started-link" to="/signin">
                 Get Started
             </NavLink>
+
+            
                     
                 </nav>
             </header>

@@ -8,7 +8,7 @@ const TakeClass = () => {
                     Take our classes and <br />
                     boost your career
                 </p>
-                <a href="#" className="btn">Get started</a>
+                <a href="/signin" className="btn">Get started</a>
             </div>
         </>
     )

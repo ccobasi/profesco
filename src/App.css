@@ -69,7 +69,8 @@ nav .home-link,
 .about-link,
 .course-link,
 .price-link,
-.signin-link {
+.signin-link,
+.get-started-link {
   display: none;
   font-weight: 400;
   text-decoration: none;
@@ -116,7 +117,7 @@ nav .btn {
 .hero-left {
   z-index: 1;
   padding: 2rem 1rem;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .hero .dots {
@@ -425,11 +426,13 @@ footer .courses-products {
 
 .link ul {
   display: flex;
+  flex-direction: column;
 }
 
 .link li {
   list-style: none;
   margin-right: 20px;
+  margin-top: 30px;
 }
 
 .link-lg {
@@ -586,7 +589,8 @@ footer .courses-products {
   .about-link,
   .course-link,
   .price-link,
-  .signin-link {
+  .signin-link,
+  .get-started-link {
     display: inline;
     font-weight: 400;
     text-decoration: none;
@@ -1237,7 +1241,7 @@ footer .courses-products {
   }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1360px) {
   .hero {
     overflow-x: hidden;
   }
@@ -1273,16 +1277,18 @@ footer .courses-products {
   }
 
   .take-class {
-    top: 275rem;
+    top: 270rem;
     margin-left: 5%;
   }
 
   .take-class .text {
     text-align: center;
     left: 20rem;
+    padding-top: 1px;
   }
 
   .take-class .btn {
     left: 28rem;
+    top: 6rem;
   }
 }

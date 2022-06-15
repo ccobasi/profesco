@@ -15,7 +15,7 @@ const Hero = () => {
                     We’ve got the solution to upgrade <br />
                     your skills and qualifications
                 </p>
-                <a href="#" className="btn-hero">Get Started</a>
+                <a href="/signin" className="btn-hero">Get Started</a>
             </div>
 
             <div className="hero-right">

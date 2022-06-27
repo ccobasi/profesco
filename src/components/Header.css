@@ -21,8 +21,8 @@ a {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 12vh;
+  justify-content: space-between;
+  height: 8vh;
   background: #fff;
 }
 
@@ -49,6 +49,12 @@ a {
   color: #fff;
   background: #f88f2f;
   padding: 0.5rem 1rem;
+  margin-right: 30px;
+}
+
+.logo {
+  position: relative;
+  left: 10px;
 }
 
 .btn .nav__link {

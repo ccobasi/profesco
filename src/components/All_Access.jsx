@@ -25,7 +25,7 @@ const All_Access = () => {
                 <h2 className="title">
                     Get full Access
                 </h2>
-                <p>
+                <p className="access">
                     Boost your career with full access to our learning programme.
                     Catch up with the syllabus all in one place
                 </p>

@@ -1,46 +1,65 @@
-import React, { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import "./Header.css";
 import logo from '../components/img/logo2.png'
-import menu from '../components/img/menu.png'
+import { Link } from 'react-router-dom';
 
+function Header() {
+  const [active, setActive] = useState("nav__menu");
+  const [icon, setIcon] = useState("nav__toggler");
+  const navToggle = () => {
+    if (active === "nav__menu") {
+      setActive("nav__menu nav__active");
+    } else setActive("nav__menu");
 
-const Header = () => {
-
-    return (
-        <div className="header">
-            <img src={menu} alt="burger" className="menu" />
-            <header>
-                <Link className='logo' to='/'>
+    // Icon Toggler
+    if (icon === "nav__toggler") {
+      setIcon("nav__toggler toggle");
+    } else setIcon("nav__toggler");
+  };
+  return (
+    <nav className="nav">
+      <Link className='logo' to='/'>
                     <img src={logo} className="logo" />
-                </Link>
-                
-                <nav>
-                <NavLink exact="true" className="home-link" activeclassname="active" to="/">
-                    Home
-            </NavLink>
-            <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
-                About
-            </NavLink>
-            <NavLink exact="true" activeclassname="active" className="course-link" to="/course">
-                Courses
-            </NavLink>
-            <NavLink exact="true" activeclassname="active" className="price-link" to="/price">
-                Pricing
-            </NavLink>
-            <NavLink exact="true" activeclassname="active" className="signin-link" to="/signin">
-                Sign In
-            </NavLink>
-            <NavLink exact="true" activeclassname="active" className="btn get-started-link" to="/signin">
-                Get Started
-            </NavLink>
-
-            
-                    
-                </nav>
-            </header>
-        </div>
-    )
+    </Link>
+      <ul className={active}>
+        <li className="nav__item">
+          <a href="/" className="nav__link">
+            Home
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="/about" className="nav__link">
+            About
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="/course" className="nav__link">
+            Courses
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="/price" className="nav__link">
+            Pricing
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="/signin" className="nav__link">
+            Sign In
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="/signin" className="btn nav__link">
+            Get Started
+          </a>
+        </li>
+      </ul>
+      <div onClick={navToggle} className={icon}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
+    </nav>
+  );
 }
 
-
-export default Header
+export default Header;

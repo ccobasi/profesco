@@ -9,17 +9,19 @@ p {
   font-family: Inter;
   font-size: 18px;
   line-height: 28px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .bell {
   position: relative;
   background: #e08213;
-  width: 7px;
-  height: 7px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   display: flex;
   align-items: center;
-  left: 12rem;
+  left: 48%;
   justify-content: center;
   padding: 0.5em;
 }
@@ -46,7 +48,7 @@ header {
   display: flex;
   padding: 0.5rem 2rem;
   top: 0;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -98,6 +100,10 @@ nav .btn {
   overflow-x: hidden;
 }
 
+.hero .title {
+  color: #152b5b;
+}
+
 .hero-img {
   position: absolute;
   width: 60vw;
@@ -115,9 +121,13 @@ nav .btn {
 }
 
 .hero-left {
-  z-index: 1;
+  /* z-index: 2; */
   padding: 2rem 1rem;
-  /* background-color: #fff; */
+}
+
+.hero-text {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .hero .dots {
@@ -133,7 +143,7 @@ nav .btn {
 
 .bg {
   position: absolute;
-  height: 45vh;
+  height: 35vh;
   right: 0;
   z-index: -1;
   left: 0;
@@ -166,7 +176,7 @@ nav .btn {
 }
 .check-wrap p {
   display: inline-block;
-  width: 10rem;
+  width: 12rem;
 }
 .check {
   font-size: 1.5rem;
@@ -180,6 +190,10 @@ nav .btn {
   text-align: center;
   color: #152b5b;
   top: 8rem;
+}
+
+.tutors h2 {
+  color: #152b5b;
 }
 
 .tutors .text {
@@ -216,21 +230,16 @@ nav .btn {
   font-size: 2rem;
   line-height: 0;
   color: #152b5b;
+  margin-top: 10px;
 }
 
 .all-access .all-access-img {
-  width: 20rem;
+  width: 28rem;
 }
 
 .all-access .dots {
   position: absolute;
   left: 0;
-}
-
-.all-access p {
-  right: 6rem;
-  font-family: Inter;
-  font-size: 1rem;
 }
 
 .all-access li {
@@ -250,11 +259,15 @@ nav .btn {
   top: 5rem;
 }
 
+.learn-pace .title {
+  color: #152b5b;
+}
+
 .learn-pace .learn-img {
   position: absolute;
-  width: 20rem;
-  height: 15rem;
-  left: 0;
+  width: 28rem;
+  height: 20rem;
+  right: 0;
   border-radius: 4px;
   top: 300px;
 }
@@ -280,6 +293,10 @@ nav .btn {
   margin-bottom: 40px;
 }
 
+.personal_tutor .title {
+  color: #152b5b;
+}
+
 .personal_tutor .bg {
   width: 100vw;
   height: 45vh;
@@ -289,9 +306,9 @@ nav .btn {
 .personal_tutor .personal-tutor-img {
   position: relative;
   top: 4rem;
-  width: 20rem;
-  height: 15rem;
-  left: 52px;
+  width: 28rem;
+  height: 20rem;
+  left: 0;
   border-radius: 4px;
 }
 
@@ -304,6 +321,10 @@ nav .btn {
 .testimonials {
   margin-top: 10rem;
   overflow-x: hidden;
+}
+
+.testimonials .title {
+  color: #152b5b;
 }
 
 .testimonials .review {
@@ -331,7 +352,7 @@ nav .btn {
   display: flex;
   position: relative;
   justify-content: space-around;
-  top: 7rem;
+  top: 17rem;
   flex-wrap: wrap;
   text-align: center;
   width: 100vw;
@@ -341,15 +362,19 @@ nav .btn {
 .rate .numbers {
   left: 738px;
   top: 4008px;
-  font: 500 1.5rem Inter;
+  font: 500 2rem Inter;
   color: #152b5b;
+}
+
+.group {
+  width: 100%;
 }
 
 .take-class {
   position: relative;
   width: 100vw;
   padding: 0.5rem 0 0 0;
-  top: 12rem;
+  top: 14rem;
   text-align: center;
   background: #081b32;
   color: #fff;
@@ -359,6 +384,7 @@ nav .btn {
   font: 200 1.5rem Inter;
   padding: 0;
   top: -9rem;
+  left: 10%;
   color: #f5f5f5;
   text-align: center;
   z-index: 1;
@@ -400,6 +426,15 @@ footer {
   display: flex;
 }
 
+.footer-heading img {
+  height: 30px;
+  width: 70px;
+}
+
+.footer-logo {
+  display: flex;
+}
+
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
@@ -417,7 +452,7 @@ footer .courses-products {
 
 .Blog {
   flex: 1;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 .Help {
@@ -507,16 +542,27 @@ footer .courses-products {
     margin-top: 2rem;
   }
 
+  .testimonials p {
+    width: 100%;
+  }
+
   .rate {
-    top: 12rem;
+    top: 13rem;
   }
 
   .take-class .btn {
-    left: 30%;
+    left: 33%;
   }
 }
 
 @media only screen and (min-width: 540px) {
+  .tutors h2 {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .tutors p {
+    width: 100%;
+  }
   .all-access .text,
   .learn-pace .text {
     align-items: center;
@@ -531,6 +577,10 @@ footer .courses-products {
 
   .learn-pace .pace-dots {
     left: 17rem;
+  }
+
+  .testimonials p {
+    width: 100%;
   }
 
   .take-class .btn {
@@ -778,17 +828,21 @@ footer .courses-products {
 
   .all-access {
     position: relative;
-    top: 25rem;
+    top: 45rem;
     height: 50vh;
   }
 
   .all-access .text {
-    left: 32rem;
+    left: 50rem;
   }
 
   .all-access p {
-    width: 19rem;
+    width: 100%;
     right: 6rem;
+  }
+
+  .access {
+    margin-bottom: 20px;
   }
 
   .all-access li {
@@ -800,7 +854,7 @@ footer .courses-products {
     position: absolute;
     width: 376px;
     height: 392px;
-    left: 90px;
+    left: 60px;
     background: #f7fcff;
     border-radius: 6px;
     z-index: 0.4;
@@ -810,7 +864,7 @@ footer .courses-products {
     position: absolute;
     width: 350px;
     height: 312px;
-    left: 135px;
+    left: 100px;
     border-radius: 4px;
     z-index: 1;
   }
@@ -840,7 +894,7 @@ footer .courses-products {
 
   .learn-pace {
     position: relative;
-    top: 30rem;
+    top: 40rem;
     height: 50vh;
   }
 
@@ -849,12 +903,16 @@ footer .courses-products {
     top: 1rem;
   }
 
+  .learn-pace .text p {
+    width: 100%;
+  }
+
   .learn-pace .bg {
     position: absolute;
     width: 373px;
     height: 392px;
     top: 2rem;
-    left: 28rem;
+    left: 40rem;
     background: #f7fcff;
     border-radius: 6px;
   }
@@ -864,6 +922,7 @@ footer .courses-products {
     width: 350px;
     height: 312px;
     top: 2rem;
+    left: 6rem;
     margin-left: 26rem;
     border-radius: 4px;
   }
@@ -871,7 +930,7 @@ footer .courses-products {
   .learn-pace .pace-dots {
     position: absolute;
     left: 640px;
-    top: 110px;
+    top: 40px;
     z-index: 1;
   }
 
@@ -879,13 +938,17 @@ footer .courses-products {
 
   .personal_tutor {
     position: relative;
-    top: 20rem;
+    top: 30rem;
   }
 
   .personal_tutor .text {
     line-height: 28px;
     top: 10rem;
-    left: 32rem;
+    left: 52rem;
+  }
+
+  .personal_tutor .text p {
+    width: 100%;
   }
 
   .personal_tutor .bg {
@@ -902,13 +965,13 @@ footer .courses-products {
     position: absolute;
     width: 350px;
     height: 312px;
-    left: 8rem;
+    left: 14rem;
     border-radius: 4px;
   }
 
   .personal_tutor .dots {
-    left: 6rem;
-    top: 330px;
+    left: 9rem;
+    top: 310px;
   }
 
   /* Testimonials */
@@ -917,7 +980,7 @@ footer .courses-products {
     padding: 4rem;
     color: #081b32;
     position: relative;
-    top: 20rem;
+    top: 0;
     height: 50vh;
     margin-top: 250px;
   }
@@ -936,11 +999,16 @@ footer .courses-products {
   .testimonials .review .title {
     font-size: 28px;
     font-family: Inter;
+    color: #081b32;
+  }
+
+  .testimonials .review p {
+    width: 100%;
   }
 
   .text-wrap {
     position: relative;
-    width: 35%;
+    width: 55%;
     padding: 2rem;
     left: 2%;
   }
@@ -992,7 +1060,7 @@ footer .courses-products {
     display: flex;
     position: relative;
     justify-content: space-evenly;
-    top: 20rem;
+    top: 1rem;
     width: 80vw;
     margin: 0 auto;
     z-index: 1;
@@ -1015,24 +1083,25 @@ footer .courses-products {
   .take-class {
     position: absolute;
     width: 80vw;
-    height: 40px;
+    height: 180px;
     padding: 5rem 0;
-    top: 270rem;
-    left: 6rem;
+    top: 360rem;
+    left: 9rem;
     align-items: center;
     justify-content: center;
   }
 
   .take-class .text {
-    font: 200 1.5rem Inter;
-    left: 13rem;
+    font: 200 2.5rem Inter;
+    left: 19rem;
     padding-top: 30px;
+    text-align: center;
     z-index: 1;
   }
 
   .take-class .btn {
-    top: 7rem;
-    left: 17rem;
+    top: 11rem;
+    left: 26rem;
     padding: 0.5rem 1.5rem;
   }
 
@@ -1048,9 +1117,17 @@ footer .courses-products {
     background: #fafafa;
   }
 
-  footer .courses-products {
+  footer p {
+    width: 100%;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+  }
+
+  .footer-wrapper .courses-products {
     position: absolute;
-    width: 108px;
+    width: 200px;
     height: 28px;
     left: 448px;
     top: 4880px;
@@ -1065,13 +1142,13 @@ footer .courses-products {
 
 @media only screen and (min-width: 912px) {
   .take-class {
-    top: 300rem;
+    top: 415rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .hero {
-    height: 100vh;
+    height: 80vh;
   }
 
   .bg {
@@ -1079,7 +1156,16 @@ footer .courses-products {
   }
 
   .hero-img {
-    height: 70vh;
+    height: 50vh;
+  }
+
+  .tutors {
+    top: 3rem;
+  }
+
+  .tutors h2 {
+    font: 3em sans-serif;
+    font-weight: 900;
   }
 
   .tutors .img {
@@ -1090,12 +1176,12 @@ footer .courses-products {
 
   .all-access {
     position: relative;
-    top: 25rem;
+    top: 50rem;
     height: 50vh;
   }
 
   .all-access .text {
-    left: 35rem;
+    left: 55rem;
     top: 5rem;
   }
 
@@ -1114,19 +1200,19 @@ footer .courses-products {
   /* Learning Pace */
 
   .learn-pace {
-    top: 38rem;
+    top: 48rem;
   }
 
   .learn-pace .bg {
     width: 450px;
     height: 392px;
     top: 2rem;
-    left: 32rem;
+    left: 47rem;
   }
 
   .learn-pace .learn-img {
     top: 1rem;
-    margin-left: 30rem;
+    margin-left: 40rem;
   }
 
   .learn-pace .pace-dots {
@@ -1137,11 +1223,11 @@ footer .courses-products {
   /* Personal tutor */
 
   .personal_tutor {
-    top: 43rem;
+    top: 45rem;
   }
 
   .personal_tutor .text {
-    left: 38rem;
+    left: 58rem;
   }
 
   .personal_tutor .bg {
@@ -1160,41 +1246,43 @@ footer .courses-products {
   /* Testimonials */
 
   .testimonials {
-    top: 45rem;
-    height: 100vh;
+    top: 15rem;
+    height: 60vh;
   }
 
   .testimonials .img {
-    height: 20rem;
+    height: 30rem;
     right: 18rem;
   }
 
   /* Rate */
 
   .rate {
-    top: 50rem;
+    top: 0;
   }
 
   /* Take class */
 
   .take-class {
-    top: 260rem;
+    top: 390rem;
+    margin-left: 19px;
+    height: 180px;
   }
 
   .take-class .text {
-    font: 200 1.8rem Inter;
-    left: 17rem;
+    font: 200 2.5rem Inter;
+    left: 25rem;
   }
 
   .take-class .btn {
-    top: 8rem;
-    left: 22rem;
+    top: 12rem;
+    left: 35rem;
   }
 
   /* Footer */
 
   footer {
-    top: 75rem;
+    top: 45rem;
   }
 }
 
@@ -1204,16 +1292,16 @@ footer .courses-products {
   }
 
   .take-class {
-    top: 290rem;
+    top: 390rem;
   }
 
   .take-class .text {
     text-align: center;
-    left: 20rem;
+    left: 32rem;
   }
 
   .take-class .btn {
-    left: 28rem;
+    left: 45rem;
   }
 
   .link ul {
@@ -1243,6 +1331,7 @@ footer .courses-products {
 
 @media only screen and (min-width: 1360px) {
   .hero {
+    height: 100vh;
     overflow-x: hidden;
   }
   .hero-right .bg {
@@ -1252,6 +1341,7 @@ footer .courses-products {
 
   .hero-img {
     width: 65vw;
+    height: 75vh;
   }
 
   .hero .dots {
@@ -1259,36 +1349,93 @@ footer .courses-products {
     top: 10rem;
   }
 
+  .tutors {
+    top: 20rem;
+  }
+
   .tutors .img {
-    height: 100px;
+    height: 70px;
+    width: 120px;
   }
 
   .all-access {
-    top: 30rem;
+    top: 70rem;
     height: 500px;
+  }
+
+  .all-access .text {
+    margin-left: 70px;
   }
 
   .learn-pace {
+    top: 80rem;
     height: 500px;
   }
 
+  .learn-pace .learn-img {
+    left: 20rem;
+  }
+
+  .learn-pace .bg {
+    left: 70rem;
+  }
+
+  .personal_tutor {
+    top: 80rem;
+  }
+
+  .personal_tutor .text {
+    margin-left: 70px;
+  }
+
+  .personal_tutor .bg {
+    width: 30vw;
+  }
+
   .testimonials {
+    top: 65rem;
     margin-top: 1rem;
+    height: 120vh;
+  }
+
+  .testimonials .bg {
+    height: 40rem;
+  }
+
+  .testimonial-left {
+    left: 15rem;
+  }
+
+  .testimonials .text-wrap {
+    height: 120px;
+    width: 30%;
+  }
+
+  .testimonials .img {
+    right: 35rem;
+  }
+
+  .rate {
+    top: 50rem;
   }
 
   .take-class {
-    top: 270rem;
+    top: 390rem;
     margin-left: 5%;
   }
 
   .take-class .text {
     text-align: center;
-    left: 20rem;
+    left: 33rem;
     padding-top: 1px;
   }
 
   .take-class .btn {
-    left: 28rem;
-    top: 6rem;
+    left: 48rem;
+    top: 9rem;
+  }
+
+  footer {
+    top: 105rem;
   }
 }
